@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "lansharedmap",
+	"version": "${version}",
+	"name": "Lan Shared Map",
+	"description": "Shared fog-of-war world map for LAN and integrated servers. Exploration recorded on the server is synced to every player.",
+	"authors": [
+		"Lan Shared Map"
+	],
+	"license": "MIT",
+	"icon": "assets/lansharedmap/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.lansharedmap.LanSharedMap"
+		],
+		"client": [
+			"dev.lansharedmap.client.LanSharedMapClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
